@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+       body{
+            font-family: "Poppins";
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .marquee{
+            width:100%;
+            aspect-ratio: 1;
+            align-items: flex-start;
+            display: flex;
+            gap:12px;
+            position: relative;
+            animation: move 10s linear infinite ;
+        }
+
+        .track{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:12px;
+            animation:marquee 10s infinite linear;
+        }
+        /* .track:nth-child(1){
+            background-color: blue;
+        }
+        .track:nth-child(2){
+            background-color: yellow;
+        } */
+        @keyframes move{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+        .item {
+            position: absolute;
+            offset-path: circle(500px at center );
+            /* offset-rotate: 0deg; */
+            width:calc(500px / 18);
+            offset-distance: calc(var(--i) * 100% / 18);
+            /* animation: spin 6s linear infinite; */
+            offset-rotate: auto;
+           
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen overflow-hidden">
+     <div class="marquee">
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   " style="--i:1">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:2">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:3">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:4">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+          
+     
+            
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:5">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:6">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:7">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:8">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:9">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:10">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:11">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:12">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:13">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:14">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:15">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:16">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:17">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] item   "style="--i:18">
+                <div>
+                    <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                    <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <div class="w-10 aspect-square rounded-full overflow-hidden">
+                    <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                    </div>
+                    <div>
+                    <b>Client Name</b>
+                    <p>Client Position</p>
+                    </div>
+                </div>
+            </div>
+            
+     
+            
+       
+        
+        
+    </div>
+</body>
+</html>
