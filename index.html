@@ -66,13 +66,21 @@
             position: absolute;
             offset-path: circle(1200px at center );
             /* offset-rotate: 0deg; */
-            width:200px;
-
+            max-width:200px;
             aspect-ratio: 1;
             offset-distance: calc(var(--i) * 100% / 18);
             /* animation: spin 6s linear infinite; */
             offset-rotate: auto;
-           
+        }
+        @media(max-width:991px){
+            .item{
+                offset-path:circle(600px at center);
+                width:100px;
+            }
+            .circle{
+                top:100%;
+         
+            }
         }
     </style>
 </head>
